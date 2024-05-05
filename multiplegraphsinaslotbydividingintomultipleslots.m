@@ -1,0 +1,23 @@
+t=0:0.01:1
+x=sin(0.2*pi*t)
+y=cos(0.5*pi*t)
+z=x+y
+%w=x-y
+subplot(4,1,1)
+plot(x)
+xlabel("time")
+ylabel("amplitude")
+title("sinwave")
+subplot(4,1,2)
+plot(y)
+xlabel("time")
+ylabel("amplitude")
+title("sinwave")
+subplot(4,1,3)
+plot(z)
+xlabel("time")
+ylabel("amplitude")
+title("sinwave")
+subplot(4,1,4)
+%plot(w)
+imshow("/home/rguktrkvalley/Screenshot from 2024-02-22 11-38-15.png")
