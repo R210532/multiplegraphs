@@ -1,0 +1,28 @@
+import numpy as np
+from matplotlib import pyplot as plt
+t=np.arange(0,0.01,1)
+x=np.sin(0.2*np.pi*t)
+y=np.cos(0.5*np.pi*t)
+z=x*y
+w=x-y
+plt.subplot(4,1,1)
+plt.plot(x)
+plt.xlabel("time")
+plt.ylabel("amplitude")
+plt.title("sinwave")
+plt.subplot(4,1,2)
+plt.plot(y)
+plt.xlabel("time")
+plt.ylabel("amplitude")
+plt.title("sinwave")
+plt.subplot(4,1,3)
+plt.plot(z)
+plt.xlabel("time")
+plt.ylabel("amplitude")
+plt.title("sinwave")
+plt.subplot(4,1,4)
+plt.plot(w)
+plt.xlabel("time")
+plt.ylabel("amplitude")
+plt.title("sinwave")
+plt.show()
